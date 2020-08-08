@@ -1,0 +1,29 @@
+package sathvik;
+import java.util.Scanner;
+
+public class Years {
+	private  void minutes()
+	{
+		int m,y,d,k;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Input the number of minutes:");
+		m=s.nextInt();
+		y=m/525600;
+		d=(m%525600)/1440;
+		System.out.println(m+" minutes is approximately "+y+" years and "+d+" days");
+		}
+
+	public static void main(String [] args)
+	{
+		Years s = new Years();
+		s.minutes();
+	}
+}
+
+
+
+#OUTPUT:
+Input the number of minutes:
+3456789
+3456789 minutes is approximately 6 years and 210 days
+
